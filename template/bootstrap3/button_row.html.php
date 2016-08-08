@@ -1,3 +1,1 @@
-<div>
-    <?php echo $view['form']->widget($form) ?>
-</div>
+<?php echo $view['form']->widget($form) ?>
