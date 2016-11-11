@@ -7,6 +7,8 @@
         <?php if (strlen($value) > 0): ?> value="<?php echo $view->escape($value) ?>"<?php endif ?>
         <?php if ($checked): ?> checked="checked"<?php endif ?>
     />
-    <?php echo $view['form']->block($form, 'form_label_text')?>
+    <?php echo $view['form']->block($form, 'form_label_text', [
+        'translation_domain' => $choice_translation_domain ?? $translation_domain
+    ])?>
 </label>
 <?php if ($wrapper): ?></div><?php endif ?>
