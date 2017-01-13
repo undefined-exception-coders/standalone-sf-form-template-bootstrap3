@@ -1,6 +1,6 @@
 <?php $wrapper = isset($wrapper) ? (bool)$wrapper : true ?>
 
-<?php if ($wrapper): ?><div class="checkbox"><?php endif ?>
+<?php if ($wrapper): ?><div class="radio"><?php endif ?>
 <label>
     <input type="radio"
         <?php echo $view['form']->block($form, 'widget_attributes') ?>
